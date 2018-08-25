@@ -1,7 +1,7 @@
 {
-  "name": "qtum-mobile-api-server",
+  "name": "htmlcoin-mobile-api-server",
   "version": "0.3.2",
-  "description": "Node.JS mobile server for QTUM application",
+  "description": "Node.JS mobile server for HTMLCOIN application",
   "dependencies": {
     "async": "^2.1.4",
     "bignumber.js": "^4.0.0",
@@ -30,7 +30,7 @@
     "node-dir": "^0.1.16",
     "node-gcm": "^0.14.6",
     "npm": "^4.1.1",
-    "qtumcore-lib": "https://github.com/qtumproject/qtumcore-lib.git",
+    "htmlcoincore-lib": "https://github.com/HTMLCOIN/htmlcoincore-lib.git",
     "query-string": "^5.0.1",
     "raven": "^1.1.1",
     "request": "^2.79.0",
