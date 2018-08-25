@@ -7,14 +7,14 @@
 
     socket.on('connect', function() {
         // Join the room.
-        socket.emit('subscribe', 'qtum');
+        socket.emit('subscribe', 'htmlcoin');
     });
 
-    socket.on('qtum/tx', function(data) {
+    socket.on('htmlcoin/tx', function(data) {
         console.log("New transaction received: ", data)
     });
 
-    socket.on('qtum/block', function(data) {
+    socket.on('htmlcoin/block', function(data) {
         console.log("Block received: ", data)
     });
 
