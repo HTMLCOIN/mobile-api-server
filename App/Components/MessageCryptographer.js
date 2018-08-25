@@ -1,13 +1,13 @@
-let qtumcore = require('qtumcore-lib');
-let _ = qtumcore.deps._;
-let PrivateKey = qtumcore.PrivateKey;
-let PublicKey = qtumcore.PublicKey;
-let Address = qtumcore.Address;
-let BufferWriter = qtumcore.encoding.BufferWriter;
-let ECDSA = qtumcore.crypto.ECDSA;
-let Signature = qtumcore.crypto.Signature;
-let sha256sha256 = qtumcore.crypto.Hash.sha256sha256;
-let $ = qtumcore.util.preconditions;
+let htmlcoincore = require('htmlcoincore-lib');
+let _ = htmlcoincore.deps._;
+let PrivateKey = htmlcoincore.PrivateKey;
+let PublicKey = htmlcoincore.PublicKey;
+let Address = htmlcoincore.Address;
+let BufferWriter = htmlcoincore.encoding.BufferWriter;
+let ECDSA = htmlcoincore.crypto.ECDSA;
+let Signature = htmlcoincore.crypto.Signature;
+let sha256sha256 = htmlcoincore.crypto.Hash.sha256sha256;
+let $ = htmlcoincore.util.preconditions;
 
 class MessageCryptographer {
 
