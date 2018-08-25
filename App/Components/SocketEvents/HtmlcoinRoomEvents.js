@@ -1,5 +1,5 @@
 const _ = require('lodash');
-const logger = require('log4js').getLogger('QtumRoomEvents Socket Events');
+const logger = require('log4js').getLogger('HtmlcoinRoomEvents Socket Events');
 const InsightApiRepository = require("../../Repositories/InsightApiRepository");
 const TransactionService = require("../../Services/TransactionService");
 const async = require('async');
@@ -7,7 +7,7 @@ const BigNumber = require('bignumber.js');
 const Address = require('../../Components/Address');
 const config = require('../../../config/main.json');
 
-class QtumRoomEvents {
+class HtmlcoinRoomEvents {
 
     constructor(socket, socketClient) {
         logger.info('Init');
@@ -27,21 +27,21 @@ class QtumRoomEvents {
 
         this.socketClient.on('connect', () => {
             logger.info('connect socketClient');
-            this.subscribeRemoteQtumRoom();
+            this.subscribeRemoteHtmlcoinRoom();
         });
 
         this.socketClient.on('disconnect', () => {
             logger.info('disconnect socketClient');
         });
 
-        this.subscribeToQtumBlock();
-        this.subscribeToQtumTrx();
+        this.subscribeToHtmlcoinBlock();
+        this.subscribeToHtmlcoinTrx();
 
     }
 
-    subscribeToQtumBlock() {
+    subscribeToHtmlcoinBlock() {
 
-        this.socketClient.on('qtum/block', (data) => {
+        this.socketClient.on('htmlcoin/block', (data) => {
 
             if (data && data.transactions) {
 
@@ -81,9 +81,9 @@ class QtumRoomEvents {
 
     }
 
-    subscribeToQtumTrx() {
+    subscribeToHtmlcoinTrx() {
 
-        this.socketClient.on('qtum/tx', (data) => {
+        this.socketClient.on('htmlcoin/tx', (data) => {
 
             let addresses = {};
 
@@ -249,8 +249,8 @@ class QtumRoomEvents {
 
     }
 
-    subscribeRemoteQtumRoom() {
-        this.socketClient.emit('subscribe', 'qtum');
+    subscribeRemoteHtmlcoinRoom() {
+        this.socketClient.emit('subscribe', 'htmlcoin');
     }
 
     /**
@@ -390,7 +390,6 @@ class QtumRoomEvents {
 
     };
 
-
 }
 
-module.exports = QtumRoomEvents;
+module.exports = HtmlcoinRoomEvents;
