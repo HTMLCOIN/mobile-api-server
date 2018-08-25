@@ -16,7 +16,7 @@
     * [Get blockchain info](#get-blockchain-info)
     * [Get dgp info](#get-dgp-info)
     * [Estimate Fee Per Kb](#estimate-fee-per-kb)
-    * [QRC20 Transfers](#qrc20-transfers)
+    * [HRC20 Transfers](#hrc20-transfers)
     * [Does Contract exist?](#does-contract-exist)
     
 * [Web Socket API](#web-socket-api)
