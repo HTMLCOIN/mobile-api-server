@@ -1,6 +1,6 @@
 {
   "notification": {
-    "title": "QTUM",
-    "body": "Payment received: {{amount}} QTUM"
+    "title": "HTMLCOIN",
+    "body": "Payment received: {{amount}} HTMLCOIN"
   }
 }
