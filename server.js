@@ -17,7 +17,7 @@ const contractPurchaseWatcherInstance = require("./App/Components/ContractPurcha
 let Raven = null;
 if(!config.disableRaven) {
 	Raven = require('raven');
-	Raven.config('https://5e107da476d548918506f173c1aeaf93:d15d9ecd7c53466fb1e7d80f257f2a4a@sentry.io/133897').install();
+	Raven.config('https://83eea99a1de9449caaabe4eb3637cc06@sentry.io/1268640').install();
 }
 
 let Server = {
