@@ -7,8 +7,8 @@
 		"HOST": "127.0.0.1",
 		"PORT": "27017",
 		"DATABASE": "server",
-		"USER": "",
-		"PASSWORD": ""
+		"USER": "HTMLCOIN",
+		"PASSWORD": "HTMLCOINPASSWORD"
 	},
 	"FIREBASE_SERVER_TOKEN": "..FIREBASE_SERVER_TOKEN..",
 	"disableRaven": "1",
