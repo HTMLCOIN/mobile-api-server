@@ -2,13 +2,13 @@
     "ENVIRONMENT": "DEV",
 	"INSIGHT_API_SOCKET_SERVER": "http://localhost:3001",
 	"INSIGHT_API_URL": "http://localhost:3001/insight-api",
-	"NETWORK": "testnet",
+	"NETWORK": "livenet",
 	"DB": {
 		"HOST": "127.0.0.1",
 		"PORT": "27017",
-		"DATABASE": "server",
-		"USER": "HTMLCOIN",
-		"PASSWORD": "HTMLCOINPASSWORD"
+		"DATABASE": "HTMLCOIN",
+		"USER": "htmlcoin",
+		"PASSWORD": "htmlcoinpassword"
 	},
 	"FIREBASE_SERVER_TOKEN": "..FIREBASE_SERVER_TOKEN..",
 	"disableRaven": "1",
