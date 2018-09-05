@@ -1,4 +1,4 @@
-let htmlcoincore = require('htmlcoincore-lib');
+let htmlcoincore = require('htmlcoin-lib');
 let _ = htmlcoincore.deps._;
 let PrivateKey = htmlcoincore.PrivateKey;
 let PublicKey = htmlcoincore.PublicKey;
