@@ -1,4 +1,4 @@
-const coreLib = require('htmlcoincore-lib');
+const coreLib = require('htmlcoin-lib');
 
 class Address {
 
