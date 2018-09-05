@@ -1,4 +1,4 @@
-const coder = require('../../node_modules/web3/lib/solidity/coder');
+const coder = require('../../../../node_modules/web3/lib/solidity/coder');
 
 class SolidityCoder {
 
