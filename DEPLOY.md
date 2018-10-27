@@ -13,8 +13,8 @@ spentindex=1
 zmqpubrawtx=tcp://127.0.0.1:28332
 zmqpubhashblock=tcp://127.0.0.1:28332
 rpcallowip=127.0.0.1
-rpcuser=qtumuser
-rpcpassword=qtumpassword
+rpcuser=htmlcoinuser
+rpcpassword=htmlcoinpassword
 rpcport=18332
 reindex=1
 gen=0
@@ -25,7 +25,7 @@ maxconnections=500
 ```
 ## INSTALL SERVER-RECEIVE
 
-4. git clone https://github.com/qtumproject/server-receive
+4. git clone https://github.com/denuoweb/server-api-receive
 5. cd server-receive
 6. npm install
 7. cp config/main.json.bak config/main.json
@@ -42,8 +42,8 @@ maxconnections=500
         "PROTOCOL":"http",
         "HOST":"127.0.0.1",
         "PORT":"18332",
-        "USER":"qtumuser",
-        "PASSWORD":"qtumpassword"
+        "USER":"htmlcoinuser",
+        "PASSWORD":"htmlcoinpassword"
     },
     "db":{ 
         "host":"127.0.0.1",
@@ -77,7 +77,7 @@ https://i.imgur.com/5NjrP84.png
 
 ## INSTALL MOBILE-API-SERVER
 
-13. git clone https://github.com/qtumproject/mobile-api-server.git
+13. git clone https://github.com/denuoweb/mobile-api-server.git
 14. cd mobile-api-server
 15. Select a branch: git checkout development || stage || master
 16. npm install
