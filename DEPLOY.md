@@ -13,7 +13,7 @@ spentindex=1
 zmqpubrawtx=tcp://127.0.0.1:28332
 zmqpubhashblock=tcp://127.0.0.1:28332
 rpcallowip=127.0.0.1
-rpcuser=htmlcoinuser
+rpcuser=htmlcoin
 rpcpassword=htmlcoinpassword
 rpcport=18332
 reindex=1
@@ -42,7 +42,7 @@ maxconnections=500
         "PROTOCOL":"http",
         "HOST":"127.0.0.1",
         "PORT":"18332",
-        "USER":"htmlcoinuser",
+        "USER":"htmlcoin",
         "PASSWORD":"htmlcoinpassword"
     },
     "db":{ 
