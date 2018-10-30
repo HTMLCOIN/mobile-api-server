@@ -57,7 +57,9 @@ maxconnections=500
 10. Create account with server-receive API:
 
 `POST http://localhost:5555/api/v1/users`
+
 `curl -d '{"password":"5ba8a72c63a7c8303cdfbfec", "email":"testemail@email.com"}' -H "Content-Type: application/json" -X POST http://localhost:5555/api/v1/users`
+
 Request Example:
 
 {
