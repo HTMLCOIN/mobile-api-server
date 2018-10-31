@@ -58,20 +58,15 @@ maxconnections=500
 
 `POST http://localhost:5555/api/v1/users`
 
-`curl -d '{"password":"5ba8a72c63a7c8303cdfbfec", "email":"testemail@email.com"}' -H "Content-Type: application/json" -X POST http://localhost:5555/api/v1/users`
-
-Request Example:
-
-{
-"password": "5ba8a72c63a7c8303cdfbfec",
-"email": "testemail@email.com"
-}
+`curl -c /tmp/cookies -b /tmp/cookies -d '{"password":"5ba8a72c63a7c8303cdfbfec", "email":"testemail@email.com"}' -H "Content-Type: application/json" -X POST http://localhost:5555/api/v1/users`
 
 https://i.imgur.com/LoTcCCL.png
 
 11. Create keys
 
-POST http://localhost:5555/api/v1/keys
+`POST http://localhost:5555/api/v1/keys`
+
+`curl -c /tmp/cookies -b /tmp/cookies  -H "Content-Type: application/json" -X POST http://localhost:5555/api/v1/keys`
 
 https://i.imgur.com/5NjrP84.png
 
