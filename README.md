@@ -440,7 +440,7 @@ Response:
 ```
 
 
-## QRC20 Transfers
+## HRC20 Transfers
 
 `GET`
 
