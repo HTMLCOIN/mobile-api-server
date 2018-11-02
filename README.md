@@ -335,7 +335,7 @@ response
     tx_hash: "c038b71aaa6fa6a1fab239fa880483ecf36d664553456ad3985b522b1612f7e5",
     vout: 1,
     txout_scriptPubKey: "76a914b739980629d47e0de6e3fac7513cff7fe36e6fff88ac",
-    amount: 1, //qtum
+    amount: 1, //htmlcoin
     block_height: 100000000|-1,
     pubkey_hash: String,
     is_stake: Boolean,
@@ -636,7 +636,7 @@ Sample output:
     "block_height": 23701|-1,
     "block_hash": "ea22d5650f6edf352790372c27edba05c4b3870f181ad245a2f9b63cfef39589"|null,
     "tx_hash": "79d78d6f54037045cd091c7ae1a3a84c07cd7a9c02190b26092e62b77feaea80",
-    "amount": 1.875, //qtum
+    "amount": 1.875, //htmlcoin
     "contract_has_been_created": true, //optional
     "contract_has_been_deleted": true, //optional
     "vout": [
