@@ -1,7 +1,7 @@
 ## Install HTMLCOIN API
 
 1. install mongodb https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/
-2. install htmlcoin-bitcore daemon -b master-bitcore https://github.com/HTMLCOIN/htmlcoin.git
+2. git clone -b master-bitcore https://github.com/HTMLCOIN/HTMLCOIN --recursive
 3. vim ~/.htmlcoin/htmlcoin.conf
 ```
 server=1
