@@ -26,7 +26,7 @@ maxconnections=500
 ## INSTALL SERVER-RECEIVE
 
 4. git clone https://github.com/denuoweb/server-api-receive
-5. cd server-receive
+5. cd server-api-receive
 6. npm install
 7. cp config/main.json.bak config/main.json
 8. vim config/main.json
