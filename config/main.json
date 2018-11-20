@@ -1,7 +1,7 @@
 {
     "ENVIRONMENT": "DEV",
 	"INSIGHT_API_SOCKET_SERVER": "http://localhost:3001",
-	"INSIGHT_API_URL": "http://localhost:3001/htmlcoin-api",
+	"INSIGHT_API_URL": "http://localhost:3001/api",
 	"NETWORK": "livenet",
 	"DB": {
 		"HOST": "127.0.0.1",
