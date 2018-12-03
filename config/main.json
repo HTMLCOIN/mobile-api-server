@@ -6,14 +6,14 @@
 	"DB": {
 		"HOST": "127.0.0.1",
 		"PORT": "27017",
-		"DATABASE": "htmlcoin-api-livenet",
+		"DATABASE": "server",
 		"USER": "",
 		"PASSWORD": ""
 	},
 	"FIREBASE_SERVER_TOKEN": "AAAAoJVfE88:APA91bHHXRO1bEZZKQaL-7DxkOwUYkkGUq5M8JMS1e_VltP0gR4e8jINRJ9d4jue1n6LrucptpXXH3pJ9J9NwjeXXubQ6aPTMY0lOqXrtWgJscIP-i1doXHo4VOwTXBqy6NAKgVOzGPm",
 	"disableRaven": "1",
     "RECEIVE_API": {
-        "URL": "http://localhost:5555",
+        "URL": "https://mobileapi.htmlcoin.com/server-receive",
         "PRIVATE_KEY": "..RECEIVE_API_PRIVATE_KEY..",
         "PUBLIC_KEY": "..RECEIVE_API_PUBLIC_KEY.."
     }
