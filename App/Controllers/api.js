@@ -37,56 +37,56 @@ let APIController = {
 		APIController.app.options('*', cors());
 
 
-        APIController.addHandler('get', '/htmlcoin-api/hrc20/:contractAddress/transfers', Controllers.hrc20.fetchTransfers.bind(Controllers.hrc20));
+        APIController.addHandler('get', '/hrc20/:contractAddress/transfers', Controllers.hrc20.fetchTransfers.bind(Controllers.hrc20));
 
-        APIController.addHandler('get', '/htmlcoin-api/contracts/:contractAddress/exists', Controllers.contracts.exists.bind(Controllers.contracts));
+        APIController.addHandler('get', '/contracts/:contractAddress/exists', Controllers.contracts.exists.bind(Controllers.contracts));
 
-        APIController.addHandler('get', '/htmlcoin-api/contracts/types', Controllers.contracts.fetchContractTypes.bind(Controllers.contracts));
+        APIController.addHandler('get', '/contracts/types', Controllers.contracts.fetchContractTypes.bind(Controllers.contracts));
 
-		APIController.addHandler('post', '/htmlcoin-api/contracts/encoder', Controllers.contracts.encodeContract);
-        APIController.addHandler('post', '/htmlcoin-api/contracts/:contractAddress/call', Controllers.contracts.fetchEncodedParams);
+		APIController.addHandler('post', '/contracts/encoder', Controllers.contracts.encodeContract);
+        APIController.addHandler('post', '/contracts/:contractAddress/call', Controllers.contracts.fetchEncodedParams);
 
-        APIController.addHandler('post', '/htmlcoin-api/contracts/generate-token-bytecode', Controllers.contracts.generateTokenBytecode);
-        APIController.addHandler('get', '/htmlcoin-api/contracts/:contractAddress/params', Controllers.contracts.fetchContractParams);
+        APIController.addHandler('post', '/contracts/generate-token-bytecode', Controllers.contracts.generateTokenBytecode);
+        APIController.addHandler('get', '/contracts/:contractAddress/params', Controllers.contracts.fetchContractParams);
 
-        APIController.addHandler('get', '/htmlcoin-api/estimate-fee-per-kb', Controllers.blockchain.getFeePerKb);
+        APIController.addHandler('get', '/estimate-fee-per-kb', Controllers.blockchain.getFeePerKb);
 
 
 
-        APIController.addHandler('post', '/htmlcoin-api/contracts/:contractId/source-code', Controllers.contractsStore.getSourceCode.bind(Controllers.contractsStore));
-        APIController.addHandler('post', '/htmlcoin-api/contracts/:contractId/bytecode', Controllers.contractsStore.getBytecode.bind(Controllers.contractsStore));
-        APIController.addHandler('get', '/htmlcoin-api/contracts/trending-now', Controllers.contractsStore.fetchTrendingNow.bind(Controllers.contractsStore));
-        APIController.addHandler('post', '/htmlcoin-api/contracts/:contractId/buy-request', Controllers.contractsStore.buyContract.bind(Controllers.contractsStore));
-        APIController.addHandler('get', '/htmlcoin-api/contracts/:contractId/is-paid/by-request-id', Controllers.contractsStore.getPaidInfoByRequestId.bind(Controllers.contractsStore));
-        APIController.addHandler('get', '/htmlcoin-api/contracts/:contractId/is-paid/by-address', Controllers.contractsStore.getPaidInfoByAddresses.bind(Controllers.contractsStore));
-        APIController.addHandler('get', '/htmlcoin-api/contracts/:contractId/abi', Controllers.contractsStore.fetchAbi.bind(Controllers.contractsStore));
-        APIController.addHandler('get', '/htmlcoin-api/contracts/last-added', Controllers.contractsStore.fetchLastAdded.bind(Controllers.contractsStore));
-        APIController.addHandler('get', '/htmlcoin-api/contracts/:limit/:offset', Controllers.contractsStore.fetchContracts.bind(Controllers.contractsStore));
-        APIController.addHandler('get', '/htmlcoin-api/contracts/:contractId', Controllers.contractsStore.fetchContract.bind(Controllers.contractsStore));
+        APIController.addHandler('post', '/contracts/:contractId/source-code', Controllers.contractsStore.getSourceCode.bind(Controllers.contractsStore));
+        APIController.addHandler('post', '/contracts/:contractId/bytecode', Controllers.contractsStore.getBytecode.bind(Controllers.contractsStore));
+        APIController.addHandler('get', '/contracts/trending-now', Controllers.contractsStore.fetchTrendingNow.bind(Controllers.contractsStore));
+        APIController.addHandler('post', '/contracts/:contractId/buy-request', Controllers.contractsStore.buyContract.bind(Controllers.contractsStore));
+        APIController.addHandler('get', '/contracts/:contractId/is-paid/by-request-id', Controllers.contractsStore.getPaidInfoByRequestId.bind(Controllers.contractsStore));
+        APIController.addHandler('get', '/contracts/:contractId/is-paid/by-address', Controllers.contractsStore.getPaidInfoByAddresses.bind(Controllers.contractsStore));
+        APIController.addHandler('get', '/contracts/:contractId/abi', Controllers.contractsStore.fetchAbi.bind(Controllers.contractsStore));
+        APIController.addHandler('get', '/contracts/last-added', Controllers.contractsStore.fetchLastAdded.bind(Controllers.contractsStore));
+        APIController.addHandler('get', '/contracts/:limit/:offset', Controllers.contractsStore.fetchContracts.bind(Controllers.contractsStore));
+        APIController.addHandler('get', '/contracts/:contractId', Controllers.contractsStore.fetchContract.bind(Controllers.contractsStore));
 
-        APIController.addHandler('post', '/htmlcoin-api/send-raw-transaction', Controllers.transactions.sendRawTransaction);
+        APIController.addHandler('post', '/send-raw-transaction', Controllers.transactions.sendRawTransaction);
 
-        APIController.addHandler('get', '/htmlcoin-api/history/:limit/:offset', Controllers.history.getAddressHistoryList.bind(Controllers.history));
-        APIController.addHandler('get', '/htmlcoin-api/history/:address/:limit/:offset', Controllers.history.getAddressHistory.bind(Controllers.history));
+        APIController.addHandler('get', '/history/:limit/:offset', Controllers.history.getAddressHistoryList.bind(Controllers.history));
+        APIController.addHandler('get', '/history/:address/:limit/:offset', Controllers.history.getAddressHistory.bind(Controllers.history));
 
-		APIController.addHandler('get', '/htmlcoin-api/transactions/:txhash/receipt', Controllers.transactions.getTransactionReceipt.bind(Controllers.transactions));
-		APIController.addHandler('get', '/htmlcoin-api/transactions/:txhash', Controllers.transactions.getTransaction.bind(Controllers.transactions));
+		APIController.addHandler('get', '/transactions/:txhash/receipt', Controllers.transactions.getTransactionReceipt.bind(Controllers.transactions));
+		APIController.addHandler('get', '/transactions/:txhash', Controllers.transactions.getTransaction.bind(Controllers.transactions));
 
-		APIController.addHandler('get', '/htmlcoin-api/outputs/unspent/:address', Controllers.outputs.getUnspentByAddress.bind(Controllers.outputs));
-		APIController.addHandler('get', '/htmlcoin-api/outputs/unspent', Controllers.outputs.getUnspentByAddresses.bind(Controllers.outputs));
+		APIController.addHandler('get', '/outputs/unspent/:address', Controllers.outputs.getUnspentByAddress.bind(Controllers.outputs));
+		APIController.addHandler('get', '/outputs/unspent', Controllers.outputs.getUnspentByAddresses.bind(Controllers.outputs));
 
-		APIController.addHandler('get', '/htmlcoin-api/news/:lang', Controllers.news.getNews);
+		APIController.addHandler('get', '/news/:lang', Controllers.news.getNews);
 
-		APIController.addHandler('get', '/htmlcoin-api/blockchain/info', Controllers.blockchain.getInfo);
-        APIController.addHandler('get', '/htmlcoin-api/blockchain/dgpinfo', Controllers.blockchain.fetchDgpInfo.bind(Controllers.blockchain));
+		APIController.addHandler('get', '/blockchain/info', Controllers.blockchain.getInfo);
+        APIController.addHandler('get', '/blockchain/dgpinfo', Controllers.blockchain.fetchDgpInfo.bind(Controllers.blockchain));
 
 		if (config.ENVIRONMENT === 'DEV') {
 
-            APIController.app.get('/htmlcoin-api/test', (req, res) => {
+            APIController.app.get('/test', (req, res) => {
                 res.sendFile(path.resolve('App/Views/index.html'));
             });
 
-            APIController.app.get('/htmlcoin-api/insight', (req, res) => {
+            APIController.app.get('/insight', (req, res) => {
                 res.sendFile(path.resolve('App/Views/insight.html'));
             });
 
