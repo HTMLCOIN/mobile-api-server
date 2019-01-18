@@ -37,7 +37,7 @@ let APIController = {
 		APIController.app.options('*', cors());
 
 
-        APIController.addHandler('get', '/hrc20/:contractAddress/transfers', Controllers.hrc20.fetchTransfers.bind(Controllers.hrc20));
+        APIController.addHandler('get', '/erc20/:contractAddress/transfers', Controllers.hrc20.fetchTransfers.bind(Controllers.hrc20));
 
         APIController.addHandler('get', '/contracts/:contractAddress/exists', Controllers.contracts.exists.bind(Controllers.contracts));
 
