@@ -1,13 +1,13 @@
-let htmlcoincore = require('htmlcoin-lib');
-let _ = htmlcoincore.deps._;
-let PrivateKey = htmlcoincore.PrivateKey;
-let PublicKey = htmlcoincore.PublicKey;
-let Address = htmlcoincore.Address;
-let BufferWriter = htmlcoincore.encoding.BufferWriter;
-let ECDSA = htmlcoincore.crypto.ECDSA;
-let Signature = htmlcoincore.crypto.Signature;
-let sha256sha256 = htmlcoincore.crypto.Hash.sha256sha256;
-let $ = htmlcoincore.util.preconditions;
+let htmlcoin = require('htmlcoin-lib');
+let _ = htmlcoin.deps._;
+let PrivateKey = htmlcoin.PrivateKey;
+let PublicKey = htmlcoin.PublicKey;
+let Address = htmlcoin.Address;
+let BufferWriter = htmlcoin.encoding.BufferWriter;
+let ECDSA = htmlcoin.crypto.ECDSA;
+let Signature = htmlcoin.crypto.Signature;
+let sha256sha256 = htmlcoin.crypto.Hash.sha256sha256;
+let $ = htmlcoin.util.preconditions;
 
 class MessageCryptographer {
 
