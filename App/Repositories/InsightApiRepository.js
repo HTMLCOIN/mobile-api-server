@@ -161,7 +161,7 @@ class InsightApiRepository {
     static minEstimateFee(nBlocks, cb) {
 
         return request.get({
-            url: config.INSIGHT_API_URL + `/utils/minestimatefee?nBlocks=${nBlocks}`,
+            url: config.INSIGHT_API_URL + `/utils/minestimatefee?nBlocks=1`,
             json: true
         }, (error, response, body) => {
 
