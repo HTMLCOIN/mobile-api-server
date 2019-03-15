@@ -4,7 +4,7 @@
   "description": "Node.JS mobile server for HTMLCOIN application",
   "dependencies": {
     "async": "^2.1.4",
-    "bignumber.js": "^4.0.0",
+    "bignumber.js": "^8.1.1",
     "bitcoin": "^3.0.1",
     "bitcoinjs-lib": "^2.3.0",
     "bluebird": "^3.5.0",
