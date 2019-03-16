@@ -6,7 +6,7 @@
     "async": "^2.1.4",
     "bignumber.js": "^8.1.1",
     "bitcoin": "^3.0.1",
-    "bitcoinjs-lib": "^2.3.0",
+    "bitcoinjs-lib": "https://github.com/HTMLCOIN/bitcoinjs-lib.git",
     "bluebird": "^3.5.0",
     "body-parser": "^1.16.0",
     "bs58": "^4.0.0",
